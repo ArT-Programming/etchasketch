@@ -3,7 +3,7 @@
 */
 
 #include "Arduino.h"
-#include "AEAT6010.h"
+#include "AEAT6012.h"
 
 Encoder::Encoder(int dataPin,int clockPin,int chipSelect)
 {
@@ -18,7 +18,6 @@ Encoder::Encoder(int dataPin,int clockPin,int chipSelect)
 int Encoder::getEncoder()
 {
   digitalWrite(_chipSelect,LOW);
-  delay(5);
   byte _incoming = shiftIn(_dataPin, _clockPin, MSBFIRST);
   _sensorValue = _incoming<<2;
   _incoming = shiftIn(_dataPin, _clockPin, MSBFIRST);

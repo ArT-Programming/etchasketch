@@ -1,8 +1,8 @@
 /*
   AEAT6010.h Library for sensor AEAT 6010
 */
-#ifndef AEAT6010_h
-#define AEAT6010_h
+#ifndef AEAT6012_h
+#define AEAT6012_h
 //Mayby oversampling
 
 class Encoder
